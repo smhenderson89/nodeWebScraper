@@ -33,8 +33,11 @@ const getQuotes = async() => {
     // Display the quotes
     console.log(quotes)
 
+    // Click on the "Next Page" button
+    await page.click(".pager > .next > a");
+
     // Close the browser
-    await browser.close();
+    // await browser.close();
 
 }
 
